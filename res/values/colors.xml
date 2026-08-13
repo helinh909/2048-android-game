@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="grey">#979292</color>
+
+
+    <!-- Color for the light theme -->
+    <color name="tile2_light">#eee4da</color>
+    <color name="tile4_light">#ede0c8</color>
+    <color name="tile8_light">#f2b179</color>
+    <color name="tile16_light">#f59563</color>
+    <color name="tile32_light">#f67c5f</color>
+    <color name="tile64_light">#D75436</color>
+    <color name="tile128_light">#edcf72</color>
+    <color name="tile256_light">#edcc61</color>
+    <color name="tile512_light">#edc850</color>
+    <color name="tile1024_light">#edc53f</color>
+    <color name="tile2048_light">#edc22e</color>
+    <color name="background_light">#FFFFFFFF</color>
+    <color name="text_light">#776e65</color>
+    <color name="coloredPrimary_light">#F44336</color>
+    <color name="coloredOnPrimary_light">#FFFFFF</color>
+
+    <!-- Color for the dark theme -->
+    <color name="tile2_dark">#3e3a34</color>
+    <color name="tile4_dark">#5E7478</color>
+    <color name="tile8_dark">#2F2B57</color>
+    <color name="tile16_dark">#313D62</color>
+    <color name="tile32_dark">#1F1478</color>
+    <color name="tile64_dark">#461A87</color>
+    <color name="tile128_dark">#5F309D</color>
+    <color name="tile256_dark">#581562</color>
+    <color name="tile512_dark">#684581</color>
+    <color name="tile1024_dark">#7754A4</color>
+    <color name="tile2048_dark">#8D03A2</color>
+    <color name="text_dark">#FFFFFFFF</color>
+    <color name="coloredPrimary_dark">#0D7AE7</color>
+    <color name="coloredOnPrimary_dark">#FF000000</color>
+
+    <!-- Color for the colorful theme -->
+    <color name="tile2_colorful">#FFEB3B</color>
+    <color name="tile4_colorful">#13F00B</color>
+    <color name="tile8_colorful">#FFB6C1</color>
+    <color name="tile16_colorful">#DC0A51</color>
+    <color name="tile32_colorful">#673AB7</color>
+    <color name="tile64_colorful">#FF5722</color>
+    <color name="tile128_colorful">#D4E157</color>
+    <color name="tile256_colorful">#40E0D0</color>
+    <color name="tile512_colorful">#1E90FF</color>
+    <color name="tile1024_colorful">#FFD700</color>
+    <color name="tile2048_colorful">#BF00FF</color>
+    <color name="background_colorful">#6599C3</color>
+    <color name="text_colorful">#FFFFFF</color>
+    <color name="button_colorful">#776e65</color>
+    <color name="coloredPrimary_colorful">#FF69B4</color>
+    <color name="coloredOnPrimary_colorful">#FFFFFF</color>
+
+</resources>

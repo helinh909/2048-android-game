@@ -1,0 +1,9 @@
+<!-- res/values/themes_colored.xml -->
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="AppTheme_Colorful" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:colorBackground">@color/background_colorful</item>
+        <item name="android:text">@color/text_colorful</item>
+        <item name="colorPrimary">@color/coloredPrimary_colorful</item>
+        <item name="colorOnPrimary">@color/coloredOnPrimary_colorful</item>
+    </style>
+</resources>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="10dp">
+
+        <Button
+            android:id="@+id/btnReturnMenu"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="60dp"
+            android:text="@string/retour"/>
+
+        <Button
+            android:id="@+id/btnStat"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="@string/statistique" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/scoreListView"
+        android:layout_width="wrap_content"
+        android:layout_height="500dp"
+        android:layout_marginBottom="20dp" />
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/r_initialiser_les_scores" />
+</LinearLayout>

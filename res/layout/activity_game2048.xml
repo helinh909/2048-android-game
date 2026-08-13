@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp"
+    tools:context=".Game2048">
+    <!--Premier Layout pour le score, le titre et meilleur score-->
+    <!--    Titre    -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        tools:context=".Game2048">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="50dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="45dp"
+            android:text="@string/_2048"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="17sp" />
+        <!--Score-->
+        <LinearLayout
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="50dp"
+            android:layout_width="106dp"
+            android:layout_height="50dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/score"
+                android:layout_width="106dp"
+                android:layout_height="wrap_content"
+                android:text="@string/score"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/affichage_score"
+                android:layout_width="106dp"
+                android:layout_height="match_parent"
+                android:textAlignment="center"
+                android:text="@string/_0" />
+        </LinearLayout>
+        <!--Meilleure score-->
+        <LinearLayout
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:layout_width="106dp"
+            android:layout_height="50dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/best_score"
+                android:layout_width="106dp"
+                android:layout_height="wrap_content"
+                android:text="@string/meilleur_score"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/affichage_best_score"
+                android:layout_width="106dp"
+                android:layout_height="match_parent"
+                android:text="@string/_0"
+                android:textAlignment="center" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--Deuxieme Layout pour le defis de jour avec objectif et timer-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnTutorial"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:text="Tutoriel" />
+
+        <!--Objectif-->
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="63dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/goalScore"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Objectif du jour:"
+                android:textAlignment="center"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/tvGoalScore"
+                android:layout_width="106dp"
+                android:layout_height="wrap_content"
+                android:text="@string/dailygoaltv"
+                android:textAlignment="center"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <!--Timer-->
+
+        <LinearLayout
+            android:layout_width="107dp"
+            android:layout_height="63dp"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/timer"
+                android:layout_width="106dp"
+                android:layout_height="wrap_content"
+                android:text="Timer"
+                android:textAlignment="center"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/tvTimerCountdown"
+                android:layout_width="106dp"
+                android:layout_height="wrap_content"
+                android:text="@string/timercountdowntv"
+                android:textAlignment="center"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--Troisieme (mais un GridLayout et non pas un Layout) pour la grille-->
+    <GridLayout
+        android:id="@+id/gameGrid"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:background="@drawable/border"
+        android:columnCount="4"
+        android:padding="15dp"
+        android:rowCount="4">
+
+        <TextView
+            android:id="@+id/tiles1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:gravity="center"
+            android:textSize="20sp" />
+
+    </GridLayout>
+
+    <!--QUatrieme Layout pour les deux boutons    -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnMenu"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:text="Menu" />
+
+        <Button
+            android:id="@+id/btnRestart"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:text="Recommencer" />
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+
